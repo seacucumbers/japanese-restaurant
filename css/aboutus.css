@@ -1,5 +1,7 @@
 body {
     background-color: #121212;
+    padding: 0;
+    margin: 0;
 }
 
 #header {
@@ -21,6 +23,11 @@ body {
     margin: 0 auto;
 }
 
+.row {
+    width: 100%;
+    background-color: #121212;
+}
+
 .links {
     text-decoration: none;
     color: #FEF5EB;
@@ -39,6 +46,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     margin: 0 25px 0 25px;
+}
+
+.main-content {
+    background-color:#121212; background-size: cover;
 }
 
 .icons {
@@ -67,6 +78,18 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.testimony {
+    position: relative;
+    text-align: center;
+}
+
+#testimony-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 p1 {
     font-family: 'Noto Serif Georgian', serif;
     font-size: 36px;
@@ -76,13 +99,48 @@ p1 {
 
 p2 {
     color: #FEF5EB;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+p3 {
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #FFCF9A; 
+}
+
+p4 {
+    color: #FFCF9A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+/* general heading */
+p5 {
+    text-align: center;
+    padding-bottom: 32px;
+    color: #FFCF9A;
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 36px;
+}
+
+p6 {
+    text-align: center;
+    color: #FEF5EB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+p7 {
+    color: #FFCF9A;
+    font-family: 'Noto Serif Georgian', serif;
     font-size: 16px;
 }
 
 .button {
     display: inline-block;
-    background-color: black;
+    background-color: transparent;
     border: 3px solid #FFCF9A;
     text-decoration: none;
     padding: 16px 16px;
@@ -94,7 +152,7 @@ p2 {
 }
 
 #box {
-    background-color: #121212;
+    background-color: transparent;
     width: 1170px;
     height: 318px;
     border: 3px solid #FFCF9A;
@@ -104,7 +162,81 @@ p2 {
     margin-right: auto;
 }
 
+.meet-our-talented-chefs {
+    width: 100%;
+    background-color: #121212;
+    padding-top: 128px;
+    text-align: center;
+}
+
 #i {
     padding-top: 65px;
     margin-left: 89px;
+}
+
+#testimony {
+    position: absolute;
+}
+
+#reserve-table {
+    background-color: #121212;
+    height: 469px;
+    border: 3px solid #FFCF9A;
+    float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reserve-table {
+    background-color: #121212;
+    height: 469px;
+    border: 3px solid #FFCF9A;
+    float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* for reservation inputboxes */
+label{
+    color: #FEF5EB;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.outer-box {
+    background-color: transparent;
+    border: 3px solid #FFCF9A;
+    padding-top: 43px;
+    padding-bottom: 61px;
+}
+
+#reservationheader {
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #FFCF9A;
+}
+
+p {
+    color: #FEF5EB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: #FEF5EB;
+}
+
+.icon {
+    font-size: 20px;
+    color: #FFCF9A;
+    margin: 5px;
+}
+
+.social-media-icons {
+    background-color: black;
+    text-align: center;
 }
