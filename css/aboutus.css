@@ -48,8 +48,15 @@ body {
     margin: 0 25px 0 25px;
 }
 
+.linkbutton:hover {
+    color: #121212;
+    background-color: #FFCF9A;
+    transition: 0.5s;
+}
+
 .main-content {
-    background-color:#121212; background-size: cover;
+    background-color:#121212;
+    background-size: cover;
 }
 
 .icons {
@@ -78,9 +85,11 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* testimony */
 .testimony {
     position: relative;
     text-align: center;
+    background: #121212;
 }
 
 #testimony-text {
@@ -88,6 +97,27 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.chevron {
+    font-size: 36px;
+    color: #FFCF9A;
+    position: absolute;
+    top: 425px;
+    right: 32px;
+}
+
+.elipses {
+    opacity: 60%;
+    color: #FFCF9A;
+    font-size: 10px;
+    padding-top: 24px;
+}
+
+.ratings {
+    color: #FFCF9A;
+    font-size: 10px;
+    padding-top: 24px;
 }
 
 p1 {
@@ -174,10 +204,6 @@ p7 {
     margin-left: 89px;
 }
 
-#testimony {
-    position: absolute;
-}
-
 #reserve-table {
     background-color: #121212;
     height: 469px;
@@ -220,14 +246,11 @@ label{
     color: #FFCF9A;
 }
 
+/*footer*/
 p {
     color: #FEF5EB;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-}
-
-::placeholder {
-    color: #FEF5EB;
 }
 
 .icon {
@@ -239,4 +262,5 @@ p {
 .social-media-icons {
     background-color: black;
     text-align: center;
+    width: 100%;
 }

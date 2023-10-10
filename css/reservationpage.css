@@ -2,6 +2,7 @@ body {
     background-color: #121212;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 #header {
@@ -41,6 +42,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     margin: 0 25px 0 25px;
+}
+
+.linkbutton:hover {
+    color: #121212;
+    background-color: #FFCF9A;
+    transition: 0.5s;
 }
 
 .icons {
@@ -150,4 +157,31 @@ p {
     margin-left: -40px;
     margin-right: 40px;
     padding-left: 80px;
+}
+
+/*footer*/
+p6 {
+    text-align: center;
+    color: #FEF5EB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+p7 {
+    color: #FFCF9A;
+    font-family: 'Noto Serif Georgian', serif;
+    font-size: 16px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #FFCF9A;
+    margin: 5px;
+}
+
+.social-media-icons {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    background-size: cover;
 }
