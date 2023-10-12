@@ -62,46 +62,52 @@
     <!--end of banner-->
     <!--reservation-->
     <div class="main-content">
-        <div class="row">
-            <div class="col-md-8" style="margin: 110px -50px 0 50px; padding-right: 100px;">
+        <div class="row" style="padding-top: 128px; padding-bottom: 40px;">
+            <div class="col-md-8" style="padding-left: 55px; padding-right: 15px;">
                 <div class="outer-box">
                     <div class="text-center">
                         <p1>Reserve a Table</p1> <br /> <br />
                     </div>
-                    <form class="row g-3">
-                        <div class="col-md-6" id="form-design-left">
-                            <label for="inputName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="inputName" title="Please input your name" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
-                        </div>
-                        <div class="col-md-6" id="form-design-right">
-                            <label for="numOfPax" class="form-label">No. of Pax</label>
-                            <i class="fa-solid fa-children" style="color:#FEF5EB; margin-left: 5px;"></i>
-                            <input type="number" class="form-control" id="numOfPax" min="1" title="Please input how many people is coming" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
-                        </div>
-                        <div class="col-md-6" id="form-design-left">
-                            <label for="inputEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" title="Please input your Email" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
-                        </div>
-                        <div class="col-md-6" id="form-design-right">
-                            <label for="inputDay" class="form-label">Day</label>
-                            <i class="fa-regular fa-calendar" style="color: #FEF5EB; margin-left: 5px;"></i>
-                            <input type="date" class="form-control" id="inputDay" min="<?= date('Y-m-d') ?>" title="Please input the date you are coming" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB" ">
-                        </div>
-                        <div class="col-md-6" id="form-design-left">
-                            <label for="inputNumber" class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" id="inputNumber" title="Please input your phone number" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
-                        </div>
-                        <div class="col-md-6" id="form-design-right">
-                            <label for="inputTime" class="form-label">Time</label>
-                            <i class="fa-regular fa-clock" style="color: #FEF5EB; margin-left: 5px;"></i>
-                            <select class="form-select" id="timeSelect" required style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB">
-                                <option value="" disabled selected style="background-color: #121212; color: #FEF5EB">Select a time</option>
-                                <option value="17:30" style="background-color: #121212; color: #FEF5EB">05:30 PM</option>
-                                <option value="18:00" style="background-color: #121212; color: #FEF5EB">06:00 PM</option>
-                                <option value="18:30" style="background-color: #121212; color: #FEF5EB">06:30 PM</option>
-                                <option value="19:00" style="background-color: #121212; color: #FEF5EB">07:00 PM</option>
-                                <option value="19:30" style="background-color: #121212; color: #FEF5EB">07:30 PM</option>
-                            </select>
+                    <form id="form-design">
+                        <div class="row">
+                            <div class="col">
+                                <label for="inputName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="inputName" title="Please input your name" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
+                            </div>
+                            <div class="col">
+                                <label for="numOfPax" class="form-label">No. of Pax</label>
+                                <i class="fa-solid fa-children" style="color:#FEF5EB; margin-left: 5px;"></i>
+                                <input type="number" class="form-control" id="numOfPax" min="1" title="Please input how many people is coming" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
+                            </div>
+                        </div> <br />
+                        <div class="row">
+                            <div class="col">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" title="Please input your Email" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
+                            </div>
+                            <div class="col">
+                                <label for="inputDay" class="form-label">Day</label>
+                                <i class="fa-regular fa-calendar" style="color: #FEF5EB; margin-left: 5px;"></i>
+                                <input type="date" class="form-control" id="inputDay" min="<?= date('Y-m-d') ?>" title="Please input the date you are coming" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB" ">
+                            </div>
+                        </div> <br />
+                        <div class="row">
+                            <div class="col">
+                                <label for="inputNumber" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="inputNumber" title="Please input your phone number" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
+                            </div>
+                            <div class="col">
+                                <label for="inputTime" class="form-label">Time</label>
+                                <i class="fa-regular fa-clock" style="color: #FEF5EB; margin-left: 5px;"></i>
+                                <select class="form-select" id="timeSelect" required style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB">
+                                    <option value="" disabled selected style="background-color: #121212; color: #FEF5EB">Select a time</option>
+                                    <option value="17:30" style="background-color: #121212; color: #FEF5EB">05:30 PM</option>
+                                    <option value="18:00" style="background-color: #121212; color: #FEF5EB">06:00 PM</option>
+                                    <option value="18:30" style="background-color: #121212; color: #FEF5EB">06:30 PM</option>
+                                    <option value="19:00" style="background-color: #121212; color: #FEF5EB">07:00 PM</option>
+                                    <option value="19:30" style="background-color: #121212; color: #FEF5EB">07:30 PM</option>
+                                </select>
+                            </div>
                         </div>
 
 
@@ -112,23 +118,23 @@
                             var minDate = utcDate.toISOString().split('T')[0];
                             document.getElementById('inputDay').min = minDate;
                         </script>
-                    </form> <br />
+                    </form> <br/> 
                     <div class="text-center">
-                        <a href="" class="button">Reserve Now!</a>
+                        <a href="" class="linkbutton">Reserve Now!</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 text-center" style="margin: 110px 50px 0 -50px; ">
+            <div class="col-md-4 text-center" style="padding-right: 55px; padding-left: 15px; ">
                 <div class="outer-box">
                     <p1>Opening Hours</p1> <br /> <br />
-                    <p style="color: #FFCF9A; margin-bottom: 14px;">Monday - Thursday</p>
-                    <p style="margin-bottom: 8px;">05:30 PM - 11:00 PM</p>
+                    <p style="color: #FFCF9A;">Monday - Thursday</p>
+                    <p style="margin-bottom: 7px;">05:30 PM - 11:00 PM</p>
                     <p style="font-size: 12px;">(last order at 10:15 PM)</p> <br />
-                    <p style="color: #FFCF9A; margin-bottom: 14px;">Saturday</p>
-                    <p style="margin-bottom: 8px;">04:30 PM - 12:30 PM</p>
+                    <p style="color: #FFCF9A;">Saturday</p>
+                    <p style="margin-bottom: 7px;">04:30 PM - 12:30 PM</p>
                     <p style="font-size: 12px;">(last order at 11:45 PM)</p> <br />
-                    <p style="color: #FFCF9A; margin-bottom: 14px;">Sunday</p>
-                    <p style="margin-bottom: 8px;">04:30 PM - 11:00 PM</p>
+                    <p style="color: #FFCF9A;">Sunday</p>
+                    <p style="margin-bottom: 7px;">04:30 PM - 11:00 PM</p>
                     <p style="font-size: 12px;">(last order at 10:15 PM)</p>
                 </div>
             </div>
@@ -137,7 +143,7 @@
     <!--end of reservation-->
     <!--termsandconditions-->
     <div class="main-content">
-        <div style="padding-top: 142px; text-align: center;">
+        <div style="padding-top: 128px; text-align: center;">
             <p1>Terms and Conditions</p1>
         </div>
         <br />
@@ -182,7 +188,7 @@
         <!--footer-->
         <div class="row" style="background-color: black; width: 100%; padding: 0; margin: 0;">
             <div class="col" style="margin-left: 40px;">
-                <img src="images/logo-square.png" title="logo-square"/>
+                <img src="images/logo-square.png" title="logo-square" />
             </div>
             <div class="col" style="padding-top: 62px; margin-left: -50px;">
                 <p7>About Us</p7>
@@ -196,19 +202,21 @@
             <div class="col" style="padding-top: 62px; margin-left: -150px;">
                 <p7>Contact Us</p7>
                 <br>
-                <img src="images/phone-alt.png" title="phone" style="margin-right: 8px;"/>
+                <img src="images/phone-alt.png" title="phone" style="margin-right: 8px;" />
                 <p6>+65 6123 4567</p6>
                 <br>
-                <img src="images/envelope.png" title="envelope" style="margin-right: 8px;"/>
+                <img src="images/envelope.png" title="envelope" style="margin-right: 8px;" />
                 <p6>japaneserestaurant@work.com.sg</p6>
                 <br>
                 <div class="row" style="background-color: transparent;">
                     <div class="col-1">
-                        <img src="images/map-marker-alt.png" title="location" style="margin-right: 8px;"/>
+                        <img src="images/map-marker-alt.png" title="location" style="margin-right: 8px;" />
                     </div>
                     <div class="col-11">
-                        <p6>190 Middle Road Fortune Centre #03-01 Level 3
-                        Singapore 188979</p6>
+                        <p6>
+                            190 Middle Road Fortune Centre #03-01 Level 3
+                            Singapore 188979
+                        </p6>
                     </div>
                 </div>
             </div>
@@ -221,10 +229,10 @@
                     <button class="btn btn-outline-secondary" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FFCF9A;" type="button" id="button-addon2">Subscribe</button>
                 </div>
                 <p7>We Accept:</p7>
-                <img src="images/visa.png" title="visa" style="margin: 5px;"/>
-                <img src="images/mastercard.png" title="mastercard" style="margin: 5px;"/>
-                <img src="images/amex.png" title="amex" style="margin: 5px;"/>
-                <img src="images/jcb.png" title="jcb" style="margin: 5px;"/>
+                <img src="images/visa.png" title="visa" style="margin: 5px;" />
+                <img src="images/mastercard.png" title="mastercard" style="margin: 5px;" />
+                <img src="images/amex.png" title="amex" style="margin: 5px;" />
+                <img src="images/jcb.png" title="jcb" style="margin: 5px;" />
             </div>
             <div class="social-media-icons">
                 <i class="fa-brands fa-instagram icon"></i>
@@ -235,7 +243,7 @@
                 <br>
                 <p style="color: #FFCF9A; font-size: 12px;">&copy;Copyright Since 2023 | Japanese Restaurant. All Rights Reserved</p>
             </div>
-        </div>  
+        </div>
         <!--end of footer-->
 
 </body>
