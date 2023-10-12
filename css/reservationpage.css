@@ -133,6 +133,7 @@ p {
     margin-top: 23px;
 }
 
+/*reservation*/
 .outer-box {
     background-color: transparent;
     border: 3px solid #FFCF9A;
@@ -145,18 +146,18 @@ p {
     font-size: 36px;
     font-weight: 600;
     color: #FFCF9A;
+    text-align: center;
+    padding-bottom: 37px;
 }
 
-#form-design-left {
-    margin-left: 40px;
-    margin-right: -40px;
-    padding-right: 80px
+#form-design {
+    padding: 0 40px 45px 40px;
 }
 
-#form-design-right {
-    margin-left: -40px;
-    margin-right: 40px;
-    padding-left: 80px;
+.form-label {
+    color: #FEF5EB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 /*footer*/
@@ -184,4 +185,8 @@ p7 {
     text-align: center;
     width: 100%;
     background-size: cover;
+}
+
+.form-control::placeholder {
+    color: #FFCF9A !important;
 }
