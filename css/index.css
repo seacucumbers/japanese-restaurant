@@ -216,3 +216,7 @@ p7 {
 .form-control::placeholder {
     color: #FFCF9A !important;
 }
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}

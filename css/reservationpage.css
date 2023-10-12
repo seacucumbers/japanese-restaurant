@@ -95,6 +95,10 @@ body {
     text-align: center;
 }
 
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 #openinghours {
     font-weight: 600;
     position: relative;
@@ -190,3 +194,4 @@ p7 {
 .form-control::placeholder {
     color: #FFCF9A !important;
 }
+
