@@ -88,11 +88,11 @@
 
         <!--big yellow square box section-->
         <div class="row" style="padding-top: 128px;">
-            <div id="box">
+            <div id="box" style="padding-left: 2px;">
                 <div class="container text-center">
                     <div class="row" style="margin-top: 65px;">
-                        <div class="col" style="margin-left: 44px;">
-                            <img src="images/fish.png" title="fish" style="margin-bottom: 16px; margin-top: 20px;"/>
+                        <div class="col" style="margin-left: 0px;">
+                            <img src="images/fish.png" title="fish" style="margin-bottom: -20px; margin-top: -10px;"/>
                             <div id="fresh-products">
                                 <p3>Fresh Products</p3>
                                 <br>
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <img src="images/hat-chef.png" title="chef hat" style="margin-bottom: 16px;"/>
+                            <img src="images/chef-hat.png" title="chef hat" style="margin-bottom: -5px;"/>
                             <div id="skilled-chefs">
                                 <p3>Skilled Chefs</p3>
                                 <br>
@@ -108,7 +108,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <img src="images/wine-glass-alt.png" title="wine glass" style="margin-bottom: 16px;"/>
+                            <img src="images/sake.png" title="wine glass" style="margin-bottom: 16px;"/>
                             <div id="best-sake-menu">
                                 <p3>Best Sake Menu</p3>
                                 <br>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <img src="images/smile.png" title="smile" style="margin-bottom: 16px;"/>
+                            <img src="images/customer-service.png" title="service" style="margin-top: -10px; margin-bottom: 3px;"/>
                             <div id="great-service">
                                 <p3>Great Service</p3>
                                 <br>
@@ -200,85 +200,85 @@
         <!--end of testimony section-->
 
         <!-- Reservation section-->
-               <div class="main-content">
-                   <div class="row" style="padding-top: 128px; padding-bottom: 40px;">
-                       <div class="col-md-8" style="padding-left: 55px; padding-right: 15px;">
-                           <div class="outer-box">
-                               <div class="text-center">
-                                   <p1>Reserve a Table</p1> <br /> <br />
-                               </div>
-                               <form id="form-design">
-                                   <div class="row">
-                                       <div class="col">
-                                           <label for="inputName" class="form-label">Name</label>
-                                           <input type="text" class="form-control" id="inputName" title="Please input your name" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
-                                       </div>
-                                       <div class="col">
-                                           <label for="numOfPax" class="form-label">No. of Pax</label>
-                                           <i class="fa-solid fa-children" style="color:#FEF5EB; margin-left: 5px;"></i>
-                                           <input type="number" class="form-control" id="numOfPax" min="1" title="Please input how many people is coming" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
-                                       </div>
-                                   </div> <br />
-                                   <div class="row">
-                                       <div class="col">
-                                           <label for="inputEmail" class="form-label">Email</label>
-                                           <input type="email" class="form-control" id="inputEmail" title="Please input your Email" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
-                                       </div>
-                                       <div class="col">
-                                           <label for="inputDay" class="form-label">Day</label>
-                                           <i class="fa-regular fa-calendar" style="color: #FEF5EB; margin-left: 5px;"></i>
-                                           <input type="date" class="form-control" id="inputDay" min="<?= date('Y-m-d') ?>" title="Please input the date you are coming" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB" ">
-                                       </div>
-                                   </div> <br />
-                                   <div class="row">
-                                       <div class="col">
-                                           <label for="inputNumber" class="form-label">Phone Number</label>
-                                           <input type="text" class="form-control" id="inputNumber" title="Please input your phone number" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
-                                       </div>
-                                       <div class="col">
-                                           <label for="inputTime" class="form-label">Time</label>
-                                           <i class="fa-regular fa-clock" style="color: #FEF5EB; margin-left: 5px;"></i>
-                                           <select class="form-select" id="timeSelect" required style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB">
-                                               <option value="" disabled selected style="background-color: #121212; color: #FEF5EB">Select a time</option>
-                                               <option value="17:30" style="background-color: #121212; color: #FEF5EB">05:30 PM</option>
-                                               <option value="18:00" style="background-color: #121212; color: #FEF5EB">06:00 PM</option>
-                                               <option value="18:30" style="background-color: #121212; color: #FEF5EB">06:30 PM</option>
-                                               <option value="19:00" style="background-color: #121212; color: #FEF5EB">07:00 PM</option>
-                                               <option value="19:30" style="background-color: #121212; color: #FEF5EB">07:30 PM</option>
-                                           </select>
-                                       </div>
-                                   </div>
+            <div class="main-content">
+                <div class="row" style="padding-top: 128px; padding-bottom: 40px;">
+                    <div class="col-md-8" style="padding-left: 60px; padding-right: 10px;">
+                        <div class="outer-box">
+                            <div class="text-center">
+                                <p1>Reserve a Table</p1> <br /> <br />
+                            </div>
+                            <form id="form-design">
+                                <div class="row" style="margin-left: 4px;">
+                                    <div class="col">
+                                        <label for="inputName" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="inputName" title="Please input your name" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
+                                    </div>
+                                    <div class="col">
+                                        <label for="numOfPax" class="form-label">No. of Pax</label>
+                                        <i class="fa-solid fa-children" style="color:#FEF5EB; margin-left: 5px;"></i>
+                                        <input type="number" class="form-control" id="numOfPax" min="1" title="Please input how many people is coming" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
+                                    </div>
+                                </div> <br />
+                                <div class="row" style="margin-left: 4px;">
+                                    <div class="col">
+                                        <label for="inputEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail" title="Please input your Email" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
+                                    </div>
+                                    <div class="col">
+                                        <label for="inputDay" class="form-label">Day</label>
+                                        <i class="fa-regular fa-calendar" style="color: #FEF5EB; margin-left: 5px;"></i>
+                                        <input type="date" class="form-control" id="inputDay" min="<?= date('Y-m-d') ?>" title="Please input the date you are coming" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB" ">
+                                    </div>
+                                </div> <br />
+                                <div class="row" style="margin-left: 4px;">
+                                    <div class="col">
+                                        <label for="inputNumber" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" id="inputNumber" title="Please input your phone number" style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB;">
+                                    </div>
+                                    <div class="col">
+                                        <label for="inputTime" class="form-label">Time</label>
+                                        <i class="fa-regular fa-clock" style="color: #FEF5EB; margin-left: 5px;"></i>
+                                        <select class="form-select" id="timeSelect" required style="background-color: transparent; border: 3px solid #FFCF9A; color: #FEF5EB">
+                                            <option value="" disabled selected style="background-color: #121212; color: #FEF5EB">Select a time</option>
+                                            <option value="17:30" style="background-color: #121212; color: #FEF5EB">05:30 PM</option>
+                                            <option value="18:00" style="background-color: #121212; color: #FEF5EB">06:00 PM</option>
+                                            <option value="18:30" style="background-color: #121212; color: #FEF5EB">06:30 PM</option>
+                                            <option value="19:00" style="background-color: #121212; color: #FEF5EB">07:00 PM</option>
+                                            <option value="19:30" style="background-color: #121212; color: #FEF5EB">07:30 PM</option>
+                                        </select>
+                                    </div>
+                                </div>
 
 
-                                   <script>
-                                       // Get the current date and set the minimum date for the inputDay input in UTC
-                                       var currentDate = new Date();
-                                       var utcDate = new Date(currentDate.getTime() - currentDate.getTimezoneOffset() * 60000);
-                                       var minDate = utcDate.toISOString().split('T')[0];
-                                       document.getElementById('inputDay').min = minDate;
-                                   </script>
-                               </form> <br />
-                               <div class="text-center">
-                                   <a href="" class="linkbutton">Reserve Now!</a>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col-md-4 text-center" style="padding-right: 55px; padding-left: 15px; ">
-                           <div class="outer-box">
-                               <p1>Opening Hours</p1> <br /> <br />
-                               <p style="color: #FFCF9A;">Monday - Thursday</p>
-                               <p style="margin-bottom: 7px;">05:30 PM - 11:00 PM</p>
-                               <p style="font-size: 12px;">(last order at 10:15 PM)</p> <br />
-                               <p style="color: #FFCF9A;">Saturday</p>
-                               <p style="margin-bottom: 7px;">04:30 PM - 12:30 PM</p>
-                               <p style="font-size: 12px;">(last order at 11:45 PM)</p> <br />
-                               <p style="color: #FFCF9A;">Sunday</p>
-                               <p style="margin-bottom: 7px;">04:30 PM - 11:00 PM</p>
-                               <p style="font-size: 12px;">(last order at 10:15 PM)</p>
-                           </div>
-                       </div>
-                   </div>
-               </div>
+                                <script>
+                                    // Get the current date and set the minimum date for the inputDay input in UTC
+                                    var currentDate = new Date();
+                                    var utcDate = new Date(currentDate.getTime() - currentDate.getTimezoneOffset() * 60000);
+                                    var minDate = utcDate.toISOString().split('T')[0];
+                                    document.getElementById('inputDay').min = minDate;
+                                </script>
+                            </form> <br />
+                            <div class="text-center">
+                                <a href="" class="linkbutton">Reserve Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center" style="padding-right: 50px; padding-left: 20px; ">
+                        <div class="outer-box">
+                            <p1>Opening Hours</p1> <br /> <br />
+                            <p style="color: #FFCF9A;">Monday - Thursday</p>
+                            <p style="margin-bottom: 7px;">05:30 PM - 11:00 PM</p>
+                            <p style="font-size: 12px;">(last order at 10:15 PM)</p> <br />
+                            <p style="color: #FFCF9A;">Saturday</p>
+                            <p style="margin-bottom: 7px;">04:30 PM - 12:30 PM</p>
+                            <p style="font-size: 12px;">(last order at 11:45 PM)</p> <br />
+                            <p style="color: #FFCF9A;">Sunday</p>
+                            <p style="margin-bottom: 7px;">04:30 PM - 11:00 PM</p>
+                            <p style="font-size: 12px;">(last order at 10:15 PM)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!--end of reservation -->
     </div>
 
@@ -303,7 +303,7 @@
             <p6>+65 6123 4567</p6>
             <br>
             <img src="images/envelope.png" title="envelope" style="margin-right: 8px;"/>
-            <p6>japaneserestaurant@work.com.sg</p6>
+            <p6>izakayaaffair@work.com.sg</p6>
             <br>
             <div class="row" style="background-color: transparent;">
                 <div class="col-1">
@@ -336,7 +336,7 @@
             <i class="fa-brands fa-tiktok icon"></i>
             <i class="fa-brands fa-facebook icon"></i>
             <br>
-            <p style="color: #FFCF9A; font-size: 12px;">&copy;Copyright Since 2023 | Japanese Restaurant. All Rights Reserved</p>
+            <p style="color: #FFCF9A; font-size: 12px;">&copy;Copyright Since 2023 | Izakaya Affair. All Rights Reserved</p>
         </div>
     </div>  
     <!--end of footer-->
