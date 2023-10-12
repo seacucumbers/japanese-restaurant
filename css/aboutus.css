@@ -85,6 +85,16 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#form-design {
+    padding: 0 40px 45px 40px;
+}
+
+.form-label {
+    color: #FEF5EB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
 /* testimony */
 .testimony {
     position: relative;
@@ -263,4 +273,8 @@ p {
     background-color: black;
     text-align: center;
     width: 100%;
+}
+
+.form-control::placeholder {
+    color: #FFCF9A !important;
 }
