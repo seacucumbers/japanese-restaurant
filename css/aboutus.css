@@ -1,8 +1,8 @@
 body {
     background-color: #121212;
-    padding: 0;
     margin: 0;
-    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 #header {
@@ -22,13 +22,6 @@ body {
     padding-top: 29px;
     padding-right: 55px;
     margin: 0 auto;
-}
-
-.row {
-    width: 100%;
-    background-color: #121212;
-    display: inline-block;
-
 }
 
 .links {
@@ -196,13 +189,13 @@ p7 {
 
 #box {
     background-color: transparent;
-    width: 1170px;
+    width: 90%;
     height: 318px;
     border: 3px solid #FFCF9A;
     float: center;
     display: block;
-    margin-left: 55px;
-    margin-right: 55px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .meet-our-talented-chefs {
